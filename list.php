@@ -26,6 +26,26 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <style>
+    /* Basic table styling */
+    h1 {
+      color: #ff4d6d;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    </style>
 </head>
 <body>
     <!-- Header Start -->
@@ -72,129 +92,57 @@
             </div>
           </nav>
     </header>
-    <!-- Header End --> <section class="section-content-block section-contact-block no-bottom-padding">
-    <!-- hero start -->
-    <section id="contact_hero">
-        <div class="container">
-            <div class="row space col-lg-12">
-                <h1 class="col-md-12 col-sm-12 text-center">We are always there for you</h1>
-            </div>
+    <!-- Header End --> 
+    <section class="section-content-block section-contact-block no-bottom-padding">
+    <div class="container text-center text-md-start mt-5">
+          <?php
+          include 'connection.php';
+      // Query to select all users
+      $sql = "SELECT * FROM users";
+      $result = $conn->query($sql);
+
+      if ($result === false) {
+          die("Error executing query: " . $conn->error);
+      }
+      ?>
+          <h1>Donar List</h1>
+          <table>
+              <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Gender</th>
+                  <th>Blood Group</th>
+                  <th>Donated Before</th>
+              </tr>
+
+              <?php
+              // Check if there are any results
+              if ($result->num_rows > 0) {
+                  // Output data of each row
+                  while ($row = $result->fetch_assoc()) {
+                      echo "<tr>";
+                      echo "<td>" . $row['f_name'] . "</td>";
+                      echo "<td>" . $row['l_name'] . "</td>";
+                      echo "<td>" . $row['email'] . "</td>";
+                      echo "<td>" . $row['phone'] . "</td>";
+                      echo "<td>" . $row['gender'] . "</td>";
+                      echo "<td>" . $row['b_group'] . "</td>";
+                      echo "<td>" . $row['donated'] . "</td>";
+                      echo "</tr>";
+                  }
+              } else {
+                  echo "<tr><td colspan='8'>No data available</td></tr>";
+              }
+
+              $conn->close(); // Close the database connection
+              ?>
+          </table>
         </div>
-    </section>
-     <!-- hero end -->
-            <div class="container">
-
-                <div class="row">
-
-                    <div class ="col-md-12">
-                        <h2 class="contact-title">Contact us</h2>                           
-                    </div>               
-
-                    <div class="col-md-3">
-
-                        <ul class="contact-info">
-                            <li>
-                                <span class="icon-container"><i class="fa fa-home"></i></span>
-                                <address>3100 C/A GEC Circle,Chattogram , Bangladesh</address>
-                            </li>
-                        </ul>                        
-
-                    </div>
-
-                    <div class="col-md-3">
-
-                        <ul class="contact-info">
-
-                            <li>
-                                <span class="icon-container"><i class="fa fa-phone"></i></span>
-                                <address><a href="#">+88013-120-9162</a></address>
-                            </li>
-
-                        </ul>                        
-
-                    </div>
-
-                    <div class="col-md-3">
-                        <ul class="contact-info">
-                            <li>
-                                <span class="icon-container"><i class="fa fa-envelope"></i></span>
-                                <address><a href="mailto:">giveblood.@gmail.com</a></address>
-                            </li>
-                        </ul>                        
-
-                    </div>
-
-                    <div class="col-md-3">
-
-                        <ul class="contact-info">
-                            <li>
-                                <span class="icon-container"><i class="fa fa-globe"></i></span>
-                                <address><a href="#">www.giveblood.com</a></address>
-                            </li>
-                        </ul>                        
-
-                    </div>                    
-
-                </div> 
-
-            </div>
-
         </section>
 
-        <section class="section-content-block section-contact-block">
 
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-sm-6 wow fadeInLeft">
-
-                        <div class="contact-form-block">
-
-                            <h2 class="contact-title">Say hello to us</h2>
-
-                            <form role="form" action="#" method="post" id="contact-form">
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Name" data-msg="Please Write Your Name" />
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Email" data-msg="Please Write Your Valid Email" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="email_subject" name="email_subject" placeholder="Subject" data-msg="Please Write Your Message Subject" />
-                                </div>
-
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="5" name="email_message" id="email_message" placeholder="Message" data-msg="Please Write Your Message" ></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-custom">Send Now</button>
-                                </div>
-
-                            </form>
-
-                        </div> <!-- end .contact-form-block  -->
-
-                    </div> <!--  end col-sm-6  -->
-
-                    <div class="col-sm-6">
-
-                        <h2 class="contact-title">Our Location</h2>
-                        <br><br>
-                        <p>GEC Circle</p>
-                        <p>Chattogram, Bangladesh</p>
- <!-- end .section-content-block  -->                            
-
-                    </div> <!--  end col-sm-6  -->                    
-
-                </div> <!-- end row  -->
-
-            </div> <!--  end .container -->
-
-        </section> <!-- end .section-content-block  -->
     <main>
 
     </main>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Give Blood -Login</title>
+    <title>Give Blood - Register</title>
 
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,12 +22,19 @@
     <link rel="stylesheet" href="./assets/vendors/css/bootstrap.min.css">
     <!-- reset css link -->
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- register css link -->
+    <link rel="stylesheet" href="./assets/css/register.css">
     <!-- main css link -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
+
+  <?php
+include 'connection.php';
+?>
+
     <!-- Header Start -->
     <header>
         <nav class="navbar navbar-expand-lg">
@@ -65,54 +72,62 @@
                   </li>
                 </ul>
                 <div class="button ms-auto">
-                  <button><a class="nav-link active" href="login.html">Login</a></button>
-                  <button><a class="nav-link" href="register.html">Register</a></button>
+                  <button><a class="nav-link" href="login.php">Login</a></button>
+                  <button><a class="nav-link active" href="register.php">Register</a></button>
               </div>
               </div>
             </div>
           </nav>
     </header>
     <!-- Header End -->
-    <!-- main start -->
-    <section id="login">
-        <div class="log_container">
-            <div class="screen">
-                <div class="screen__content">
-                    <form class="login">
-                        <div class="login__field">
-                            <i class="login__icon fas fa-user"></i>
-                            <input type="text" class="login__input" placeholder="User name / Email">
-                        </div>
-                        <div class="login__field">
-                            <i class="login__icon fas fa-lock"></i>
-                            <input type="password" class="login__input" placeholder="Password">
-                        </div>
-                        <button class="button login__submit">
-                            <span class="button__text">Log In Now</span>
-                            <i class="button__icon fas fa-chevron-right"></i>
-                        </button>				
-                    </form>
-                    <div class="social-login">
-                        <h3>log in via</h3>
-                        <div class="social-icons">
-                            <a href="https://www.instagram.com" target="_blank" class="social-login__icon fab fa-instagram"></a>
-                            <a href="https://www.facebook.com" target="_blank" class="social-login__icon fab fa-facebook"></a>
-                            <a href="https://www.twitter.com" target="_blank" class="social-login__icon fab fa-twitter"></a>
-                            <a href="https://www.google.com" target="_blank" class="social-login__icon fab fa-google"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="screen__background">
-                    <span class="screen__background__shape screen__background__shape4"></span>
-                    <span class="screen__background__shape screen__background__shape3"></span>		
-                    <span class="screen__background__shape screen__background__shape2"></span>
-                    <span class="screen__background__shape screen__background__shape1"></span>
-                </div>		
-            </div>
-        </div>
-    </section>
-    <!-- main end -->
-    <!-- Footer Start -->
+    <div class="regi_container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" action="reg_submit.php" method="post">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="f_name" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="l_name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="group">Blood Group:</label>
+            <select id="group" name="b_group">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O+">O-</option>
+            </select>
+
+            <label for="donate">Have You Donated Blood Before?</label>
+            <select name="donated" id="donate">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <input type="submit" value="Register">
+            <span>Already Joined?</span> <a href="login.php">Log In</a>
+        </form>
+    </div>
+        <!-- Footer Start -->
         <footer>
             <div class="container-fluid">
               <!-- Footer -->
@@ -229,18 +244,18 @@
               <!-- Footer -->
             </div>
             <!-- End of .container -->
-        </footer>
-        <!-- Footer End -->
+          </footer>
+          <!-- Footer End -->
       
       
       
-        <!-- jquery JS src -->
-        <script src="./assets/vendors/js/jquery-3.7.1.min.js"></script>
-        <!-- bootstrap JS src -->
-        <script src="./assets/vendors/js/bootstrap.bundle.min.js"></script>
-        <!-- Main Jquery JS src -->
-        <script src="./assets/js/jquery.js"></script>
-        <!-- main app.js src -->
-         <script src="./assets/js/app.js"></script>
+          <!-- jquery JS src -->
+          <script src="./assets/vendors/js/jquery-3.7.1.min.js"></script>
+          <!-- bootstrap JS src -->
+          <script src="./assets/vendors/js/bootstrap.bundle.min.js"></script>
+          <!-- Main Jquery JS src -->
+          <script src="./assets/js/jquery.js"></script>
+          <!-- main app.js src -->
+          <script src="./assets/js/app.js"></script>
 </body>
 </html>
