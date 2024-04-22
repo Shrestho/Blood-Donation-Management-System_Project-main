@@ -1,0 +1,1434 @@
+
+/* hero section css start */
+#hero .inner_container{
+    width: 50%;
+}
+#hero{
+    background-image: url(./../image/banner_bg.avif);
+    background-position: right;
+    background-repeat: no-repeat;
+    height:600px;
+    display: flex;
+    align-items: center;
+}
+#hero .inner_container h1 {
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 400px;
+    color:#C41E3A;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+  }
+#hero .inner_container p{
+    font-size: 16px;
+    color:black;
+    line-height: 32px;
+    padding-bottom: 35px;
+  }
+#hero .join_btn{
+    border-radius: 4px;
+    background-color: #A41214;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+#hero .join_btn{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+
+#hero .join_btn:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+
+#hero .join_btn:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+
+#hero .join_btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+  
+/* hero section css end */
+
+/* donation process css start */
+#donation{
+    margin-bottom: 100px;
+}
+#donation h2{
+    font-size: 35px;
+    color: #9F2042;
+}
+#donation p{
+    font-size: 20px;
+}
+#donation .card{
+    transition: 0.5s ;
+}
+#donation .card:hover{
+    transform: scale(1.05) ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(255, 80, 80, 2.3) 0px 8px 16px -8px;;
+}
+#donation .card-body h2{
+    padding: 20px 0 ;
+    position: relative;
+    color:#175676;
+}
+#donation .card-body p{
+    padding: 0 0 10px;
+    color: #540804;
+}
+#donation .card-body img{
+    transition: transform .2s;
+}
+#donation .card-body img:hover{
+  transform: rotate(5deg);
+  transition: transform 0.3s ease-in-out;
+}
+#donation .card-body h2::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f45b5b;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+#donation .card-body h2:hover::after,
+#donation .card-body h2.active::after {
+    width: 50%;
+    left: 0;
+    right: auto;
+}
+
+/* donation process css end */
+
+/* our volunteers css start */
+#volunteers{
+    margin-bottom: 100px;
+}
+#volunteers h2{
+    font-size: 35px;
+    color: #9F2042;
+}
+#volunteers p{
+    font-size: 20px;
+}
+  .team-layout-1 {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #EEE;
+  }
+  .team-layout-1 .team-member img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  .team-layout-1 .team-info {
+    padding: 5px 12px;
+    text-align: center;
+  }
+  .team-layout-1 h3 {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    margin: 15px 0 0 0;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    color: #1A1A1A;
+  }
+  .team-layout-1 h4 {
+    font-family: 'Dosis', sans-serif;
+    color: #808080;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+  }
+  .team-layout-1 p {
+    margin-top: 0;
+  }
+  .team-layout-1 .team-content {
+    background: #F8F9FA;
+  }
+  .team-layout-1 .team-content .team-social-share {
+    border-top: 1px solid #EEE;
+    margin: 0px 0px;
+    padding: 15px;
+  }
+  .team-layout-1 .team-content .team-social-share a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 2px;
+    text-align: center;
+    font-size: 20px;
+    width: 40px;
+    color: #FE3C47;
+    border: 1px solid #EEE;
+    background: #FFFFFF;
+  }
+  .team-layout-1 .team-content .team-social-share a:hover {
+    color: #d3010d;
+  }
+/* our volunteers css end */
+
+/* testimonial section css start */
+#testimonial{
+    margin-bottom: 100px;
+}
+#testimonial h2{
+    font-size: 35px;
+    color: #9F2042;
+}
+#testimonial p{
+    font-size: 16px;
+}
+#testimonial .card-title{
+    font-size: 25px;
+    color: black;
+}
+/* testimonial section css end */
+
+/* about us page css start */
+
+/* hero section start */
+
+#hero_about{
+    background-image: url(./../image/home_1_slider_1.webp);
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:600px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#hero_about p{
+    text-align: center;
+    width: 100%;
+    font-size: 65px;
+    color:#219ebc;
+}
+/* hero section end */
+
+/* our mission and vision */
+
+#mission_vision {
+    padding: 50px 0;
+    text-align: center;
+}
+#mission_vision #line_img{
+    padding-bottom: 20px;
+}
+#mission_vision .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative; /* Add relative positioning to the container */
+}
+#mission_vision span h2{
+    font-size: 35px;
+}
+#mission_vision img{
+    margin-bottom: 35px;
+}
+#mission_vision .mission,
+#mission_vision .vision {
+    width: 45%; /* Adjust width as needed */
+}
+
+#mission_vision .vision::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #7e0808; /* Adjust color as needed */
+    transform: translateY(-50%);
+}
+#mission_vision .mission::before{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px dotted #7e0808;
+    top: -10%;
+    left: 47.5%;
+    background-color: #4169E1;
+    z-index: 99;
+}
+#mission_vision .mission::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px dotted #025402;
+    top: -6.8%;
+    left: 48.15%;
+    background-color: 	#FF00FF;
+    z-index: 99;
+}
+
+#mission_vision .vision::before {
+    left: 49%; /* Adjust position as needed */
+}
+
+#mission_vision h2 {
+    font-size: 28px;
+    color: #d50e0e;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative; /* Add relative positioning to the headings */
+}
+#mission_vision #symbol{
+    font-size: 20px;
+    color:	#DE3163;
+    margin-left: 150px;
+    padding-bottom: 20px;
+}
+#mission_vision i {
+    margin-right: 10px;
+}
+
+#mission_vision p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* our mission and vision end */
+
+/* counter up section css start */
+.section-counter {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0px;
+}
+.section-counter .counter-block {
+  margin: 30px 0;
+  background: #fffefe;
+  padding: 25px 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.section-counter .counter-block h4 {
+  margin-top: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+.section-counter .counter-block .counter {
+  display: block;
+  margin-top: 0px;
+  font-size: 42px;
+  color: #FE3C47;
+  font-weight: 600;
+  font-family: 'Dosis', sans-serif;
+}
+.section-counter .counter-block .icon{
+  border-radius: 0;
+  font-size: 48px;
+  line-height: 50px;
+  margin: 20px 0;
+  text-align: center;
+  color: #111;
+  opacity: 0.4;
+}
+
+/* counter up section css end */
+
+/* why donate blood css start */
+.why-donate {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .why-donate h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #a00f0f;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .benefit-card {
+    background-color: #ffbaba;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .benefit-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .benefit-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .benefit-card p {
+    font-size: 1rem;
+    line-height: 32px;
+    color: #666;
+  }
+  
+  .disclaimer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #999;
+    padding-bottom: 20px;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Replace with your primary color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c0392b;
+  }
+  /* why donate blood end */
+
+  /* how to donate css start */
+  #how-to-donate {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+#how-to-donate h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color:#C41E3A;
+    text-align: center;
+}
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.step {
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+    padding: 30px;
+    background-color: #d25555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 20px;
+}
+
+.step-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: 	#FAD5A5; 
+}
+
+.step-content p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+.btn-container {
+    text-align: center; 
+    margin-top: 40px; 
+}
+.btn:hover {
+    background-color: #c82333; 
+}
+.btn {
+    display: inline-block;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: auto;
+}
+
+.btn:hover {
+    background-color: #c82333; 
+}
+
+  /* how to donate css end */
+
+/* impect css start*/
+#impact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#impact h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#c31b1b;
+    text-align: center;
+}
+
+#impact .text-block {
+    margin: 80px 0px;
+    width: 50%;
+    background-color: #d2d2ed;
+}
+
+#impact .text-block p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#impact .video-testimonial {
+    width: 50%; 
+    padding: 40px 20px;
+}
+
+#impact .video-testimonial iframe {
+    border: 10px solid #fd4545; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+#impact .video-testimonial:hover iframe {
+    transform: scale(1.05); 
+}
+/* impect css end */
+
+
+ /* volunteer section css start */
+
+  .volunteer {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .volunteer h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #a00f0f;
+  }
+ .volunteer span{
+    font-size:  20px;
+ }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .volunteer_card {
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .volunteer_card:hover {
+    transform: scale(1.02);
+  }
+  
+  .volunteer_card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .volunteer_card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .volunteer_card p {
+    font-size: 1rem;
+    line-height: 32px;
+    color: #666;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Replace with your primary color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c0392b;
+  }
+
+  /* volunteer section css end */
+
+  /* our team css start */
+
+.our-team {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .our-team h2 {
+    font-size:35px;
+    margin-bottom: 20px;
+    color: #a00f0f;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(184, 27, 27, 2.1);
+  }
+  .team-member:hover{
+    transform: skew(1deg) scale(1.05);
+    background-color: #d25555;
+  }
+  .team-member img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .team-member img:hover{
+    border: 3px solid #540000;
+  }
+  .team-member h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #060606;
+  }
+  .team-member p {
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  /* our team css end */
+ /* Style for Volunteer Opportunities section */
+#be_volunteer a{
+    margin-left: 45%;
+    margin-bottom: 150px;
+}
+/* volunteer css end */
+/* about us page css end */
+
+/* blog page css start */
+#blog{
+  background-image: url(./../image/blog_hero_bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+#blog h1{
+  padding-top: 100px;
+  color: #1D1A39;
+}
+#blog p{
+  font-size: 20px;
+  color: #ffffff;
+  padding-top: 100px;
+}
+#items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+#items button{
+  background-color: #f39f5a;
+  padding: 15px 25px;
+}
+#items button span i{
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+}
+#items button p{
+  color:#1D1A39;
+  font-size: 16px;
+  display: inline-flex;
+}
+#blood{
+  position: relative;
+}
+#blood p{
+  text-align: center;
+  font-size: 20px;
+  color:#1D1A39;
+  font-weight: 700;
+}
+#blood ul{
+  position: relative;
+}
+#blood ul li{
+  position: relative;
+  left: 0;
+  color: #1D1A39;
+  margin: 4px 0;
+  border-left: 2px solid #451952;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #f5e5e5;
+}
+#blood ul li:hover{
+  left: 10px;
+}
+
+#blood  ul li span {
+  position: relative;
+  padding: 8px;
+  padding-left: 12px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
+}
+#blood  ul li:hover span {
+  color: #fff;
+}
+#blood  ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ae445a;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+}
+#blood  ul li:hover:before {
+  transform: scaleX(1);
+}
+
+/* gallery css start */
+.section-content-block {
+  padding: 100px 0 100px 0;
+  background: #FFFFFF;
+}
+.section-secondary-bg {
+  background: #F9FAFB !important;
+}
+.section-heading-wrapper {
+  margin-bottom: 32px;
+}
+.section-heading {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+.section-heading:after,
+.section-heading:before {
+  display: none;
+}
+.section-subheading {
+  font-size: 18px;
+  padding: 0px;
+}
+.no-padding-gallery .gallery-container {
+  padding: 0px;
+  margin: 0;
+}
+.gallery-light-box {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-light-box .gallery-img {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  padding: 6px;
+}
+.gallery-light-box .gallery-img:before {
+  background: rgba(237, 47, 44, 0.1);
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.gallery-light-box .gallery-img:after {
+  font-family: FontAwesome;
+  content: '\f1c5';
+  position: absolute;
+  right: 150%;
+  margin-left: -21px;
+  bottom: -64px;
+  background: #FFFFFF;
+  color: #FE3C47;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.gallery-light-box .gallery-img img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  opacity: 1;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+.gallery-light-box:hover .gallery-img:before {
+  background: rgba(237, 47, 44, 0.5);
+  width: 100%;
+  height: 1500px;
+}
+.gallery-light-box:hover .gallery-img:after {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  margin-top: -24px;
+}
+.gallery-light-box:hover .gallery-img img {
+  opacity: 0.4;
+}
+.gallery-light-box:hover .gallery-img figcaption {
+  bottom: 0px;
+  left: 0;
+}
+/* gallery css end */
+
+/* faq section start */
+#faq {
+  margin: 150px;
+}
+#faq h2{
+  font-size: 35px;
+  color: red;
+}
+
+.layout {
+  width: 600px;
+  margin: auto;
+}
+
+.accordion {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(105, 206, 105);
+  border-radius: 10px;
+}
+
+.accordion__question p {
+  margin: 5px;
+  padding: 0;
+  font-family: Verdana;
+  font-size: 20px;
+}
+
+.accordion__answer p {
+  margin: 5px;
+  padding: 10px;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  background: rgb(82, 170, 122);
+  border-radius: 10px;
+}
+
+.accordion:hover {
+  cursor: pointer;
+}
+
+.accordion__answer {
+  display: none;
+}
+
+.accordion.active .accordion__answer {
+  display: block;
+}
+@media (max-width: 600px) {
+  .accordion {
+      max-width: 100%;
+  }
+}
+/* faq section end */
+
+/* campaign section css start */
+
+.event-latest {
+  background: #F8F9FA;
+  position: relative;
+  margin-bottom: 30px;
+}
+.event-latest .event-latest-thumbnail a {
+  display: block;
+}
+.event-latest .event-latest-thumbnail a img {
+  vertical-align: middle;
+  width: 220px;
+  height: 220px;
+}
+.event-latest .latest-date {
+  border: 2px solid #333333;
+  border-radius: 0px;
+  background: #333333;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  padding: 2px 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.event-latest .event-details {
+  padding: 10px 15px 0 0;
+}
+.event-latest .event-latest-title {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.event-latest .event-latest-title a {
+  color: #FE3C47;
+}
+.event-latest .event-latest-title a:hover {
+  color: #fe0917;
+}
+.event-latest .event-latest-details {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.event-latest .event-latest-details a {
+  border-right: 1px solid #a1a1a1;
+  color: #6e6e6e;
+  display: inline-block;
+  line-height: 14px;
+  margin-right: 3px;
+  padding-right: 8px;
+  transition: all 0.3s ease 0s;
+}
+.event-latest .event-latest-details a:last-child {
+  border-right: medium none;
+  margin-right: 0;
+  padding-right: 0;
+}
+.event-latest .event-latest-details a:hover {
+  color: #212121;
+}
+.hidden-campaigns {
+  display: none; /* Initially hide the additional campaigns */
+}
+
+.show {
+  display: block; /* Show the additional campaigns when toggled */
+}
+#loadMoreBtn{
+  margin-bottom: 50px;
+}
+/* campaign section css end */
+
+/* healthy section start */
+#healthy-section {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
+#healthy-section h2 {
+  color: #333;
+}
+
+.featured-article, .article-card {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.featured-article img, .article-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.featured-article h3, .article-card h4 {
+  color: #333;
+}
+
+.featured-article p, .article-card p {
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #007bff;
+  color: #fff;
+}
+.hidden-content {
+  display: none;
+}
+
+.hidden-content.show {
+  display: block;
+}
+/* healthy section end */
+/* blog page css end */
+
+
+
+
+
+/* contact page css start */
+#contact_hero{
+  background-image: url(./../image/contact_hero.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:600px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.section-contact-block {
+  position: relative;
+  overflow: hidden;
+}
+.section-contact-block .content-block {
+  padding: 0 48px 0 0;
+}
+.section-contact-block .contact-title {
+  font-size: 24px;
+  border-bottom: 3px solid #eeeeee;
+  color: #5c5c5c;
+  padding-bottom: 15px;
+  position: relative;
+}
+.section-contact-block .contact-title:after {
+  bottom: -3px;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 32px;
+  background: #FE3C47;
+}
+.section-contact-block .contact-info li {
+  margin-bottom: 24px;
+}
+.section-contact-block .contact-info .icon-container {
+  display: inline-block;
+  background: #FE3C47;
+  color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin-right: 5px;
+}
+.section-contact-block .contact-info .icon-container i {
+  font-size: 14px;
+}
+.section-contact-block .contact-info address {
+  display: inline-block;
+}
+.section-contact-block .contact-info a {
+  color: #333333;
+}
+.section-contact-block .contact-info a:hover {
+  color: #FE3C47;
+}
+.section-contact-block .contact-form-block {
+  padding: 0 0 0 0px;
+}
+.section-contact-block #contact-form input[type=text],
+.section-contact-block #contact-form input[type=email],
+.section-contact-block #contact-form input[type=url],
+.section-contact-block #contact-form input[type=password] {
+  border: 0px;
+  border-bottom: 1px solid #EEE;
+  line-height: 42px;
+  height: 42px;
+  margin-bottom: 24px;
+  padding-left: 2px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s 0.2s ease-out;
+  -moz-transition: 0.3s 0.2s ease-out;
+  -o-transition: 0.3s 0.2s ease-out;
+  transition: 0.3s 0.2s ease-out;
+}
+.section-contact-block #contact-form input[type=text]:focus,
+.section-contact-block #contact-form input[type=email]:focus,
+.section-contact-block #contact-form input[type=url]:focus,
+.section-contact-block #contact-form input[type=password]:focus {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  border: 0px;
+  border-bottom: 1px solid #a1a1a1;
+}
+.section-contact-block #contact-form textarea {
+  border: 0px;
+  border-bottom: 1px solid #EEE;
+  padding-left: 2px;
+  margin-bottom: 24px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s 0.2s ease-out;
+  -moz-transition: 0.3s 0.2s ease-out;
+  -o-transition: 0.3s 0.2s ease-out;
+  transition: 0.3s 0.2s ease-out;
+}
+.section-contact-block #contact-form textarea:focus {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+  border: 0px;
+  border-bottom: 1px solid #a1a1a1;
+}
+.section-transparent-bg {
+  background: transparent !important;
+}
+
+/* contact page css end */
+
+
+/* join page css start */
+.entry{
+  background-color: #ffffff;
+  background-image: url(./../image/donate_3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 100vh;
+  width: 50%;
+  border-radius: 15px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  box-shadow: rgba(0, 0, 71, 0.1) 0px 7px 29px 0px;
+}
+.entry h2{
+  color: #000000;
+  padding-bottom: 25px;
+  padding-top: 150px;
+  font-size: 35px;
+}
+.entry p{
+  color: #000000;
+  padding-bottom: 45px;
+  font-size: 25px;
+}
+.entry a{
+  color: #fff7f7;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #007bff;
+  border: 1px solid #fff;
+  width: 15%;
+  text-align: center;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+.entry span{
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* join page css end */
+
+/* login css */
+#login {
+	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+}
+
+.log_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {		
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #5C5696;
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #6C63AC;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #5D54A4, #6A679E);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #7E7BB9;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
+
+/* login css end */

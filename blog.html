@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Blood - Blog</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts link (Nunito) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..   1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <!-- Lato font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,  900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="./assets/vendors/css/bootstrap.min.css">
+    <!-- reset css link -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- main css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">GiveBlood</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" activearia-current="page" href="blog.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blog <i class="bi bi-caret-down-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="blog.html">Blood Donation Tips</a></li>
+                      <li><a class="dropdown-item" href="blog.html">Health & Wellness</a></li>
+                      <li><a class="dropdown-item" href="blog.html">Community & Events</a></li>
+                      <li><a class="dropdown-item" href="blog.html">Gallery</a></li>
+                      <li><a class="dropdown-item" href="blog.html">Campaigns</a></li>
+                      <li><a class="dropdown-item" href="blog.html">FAQs</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="volunteer.html">Be Volunteer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="button ms-auto">
+                  <button><a class="nav-link" href="login.html">Login</a></button>
+                  <button><a class="nav-link" href="register.html">Register</a></button>
+              </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Header End -->
+    <main>
+      <!-- blog hero section start -->
+      <section id="blog">
+        <div class="container">
+          <h1 class="col-md-12 col-sm-12  text-center">Discover the power of giving blood for a healthier community.</h1>
+          <p class="col-md-12 col-sm-12  text-center">Join our campaigns for a better tomorrow.</p>
+        </div>
+      </section>
+      <!-- blog hero section end -->
+      <!-- items section start -->
+      <section id="items">
+      <div class="flex justify-center">
+        <a href="#blood">
+          <button class="flex items-center">
+            <span><i class="fa-solid fa-gears"></i></span>
+            <p>Tips & Tricks</p>
+          </button>
+        </a>
+        <a href="#gallery"><button class="flex items-center">
+          <span><i class="fa-regular fa-calendar-days"></i></span>
+          <p>Gallery</p>
+        </button></a>
+        <a href="#faq">
+          <button class="flex items-center">
+            <span><i class="fa-solid fa-comment-dots"></i></span>
+            <p>FAQ</p>
+          </button>
+        </a>
+        <a href="#drive">
+         <button class="flex items-center">
+          <span><i class="fa-solid fa-house-medical"></i></span>
+          <p>Blood Drives</p>
+         </button>
+        </a>
+        <a href="#healthy-section">
+          <button class="flex items-center">
+            <span><i class="fa-solid fa-heart-pulse"></i></span>
+            <p>Healthy</p>
+          </button>
+        </a>
+        <a href="#inspire">
+          <button class="flex items-center">
+            <span><i class="bi bi-emoji-laughing"></i></span>
+            <p>Inspiration</p>
+          </button>
+        </a>
+        <a href="#story">
+          <button class="flex items-center">
+            <span><i class="bi bi-clock-history"></i></span>
+            <p>Stories</p>
+          </button>
+        </a>
+
+      </div>
+    </section>
+      <!-- items section end -->
+
+      <!-- blood tips section start -->
+      <section id="blood">
+        <div class="container">
+          <div class="row space center">
+            <p>Eligibilty Criteria</p>
+            <ul>
+              <li><span>Age: Donors are usually required to be within a certain age range, typically between 18 and 65 years old</span></li>
+              <li><span>Weight: Donors must meet a minimum weight requirement, usually around 110 pounds (50 kilograms).</span></li>
+              <li><span>Medical History: Donors are typically asked about their medical history during the screening process. Certain medical conditions or medications may disqualify individuals from donating blood</span></li>
+              <li><span>Previous Blood Donation: There may be specific intervals required between blood donations to ensure donors have adequate time to replenish their blood volume and iron levels.</span></li>
+              <li><span>Behavioral Risk Factors: Individuals who engage in behaviors that increase their risk of contracting bloodborne infections, such as HIV or hepatitis, may be deferred from donating blood. This includes intravenous drug use and certain sexual activities.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- blood tips section end -->
+
+      <!-- gallery section start -->
+      <section class="section-content-block section-secondary-bg" id="gallery">
+
+        <div class="container">
+
+            <div class="row section-heading-wrapper">
+
+                <div class="col-md-12 col-sm-12 text-center">
+                    <h2 class="section-heading"><span>Photo</span> Gallery</h2>
+                    <p class="section-subheading">
+                        Campaign photos of different parts of world and our prestigious voluntary work
+                    </p>
+                </div> <!-- end .col-sm-10  -->
+
+            </div> <!-- end .row  -->
+
+        </div> <!--  end .container -->
+
+        <div class="container wow fadeInUp">
+
+
+            <div class="row no-padding-gallery">
+
+                <div class="col-md-3 col-sm-12 gallery-container">
+
+                    <a class="gallery-light-box" data-gall="myGallery" href="./assets/image/momemt1.webp">
+
+                        <figure class="gallery-img">
+
+                            <img src="./assets/image/momemt1.webp" alt="gallery image" />
+
+                        </figure> <!-- end .cause-img  -->
+
+                    </a> <!-- end .gallery-light-box  -->
+
+                </div><!-- end .col-sm-3  -->
+
+                <div class="col-md-3 col-sm-12 gallery-container">
+
+                    <a class="gallery-light-box"  data-gall="myGallery" href="./assets/image/moment2.web">
+
+                        <figure class="gallery-img">
+
+                            <img src="./assets/image/moment2.webp" alt="gallery image" />
+
+                        </figure> <!-- end .cause-img  -->
+
+                    </a>
+
+                </div><!-- end .col-sm-3  -->
+
+                <div class="col-md-3 col-sm-12 gallery-container">
+
+                    <a class="gallery-light-box" data-gall="myGallery" href="./assets/image/moment3.webp">
+
+                        <figure class="gallery-img">
+
+                            <img src="./assets/image/moment3.webp" alt="gallery image" />
+
+                        </figure> <!-- end .cause-img  -->
+
+                    </a> <!-- end .gallery-light-box  -->
+
+                </div><!-- end .col-sm-3  -->
+
+                <div class="col-md-3 col-sm-12 gallery-container">
+
+                    <a class="gallery-light-box"  data-gall="myGallery" href="./assets/image/moment4.webp">
+
+                        <figure class="gallery-img">
+
+                            <img src="./assets/image/moment4.webp" alt="gallery image" />
+
+                        </figure> <!-- end .cause-img  -->
+
+                    </a>
+
+                </div><!-- end .col-sm-3  -->
+
+            </div> <!-- end .row  -->
+            <div class="row no-padding-gallery">
+
+                <div class="col-md-3 col-sm-12 gallery-container">
+
+                    <a class="gallery-light-box" data-gall="myGallery" href="./assets/image/moment5.webp">
+
+                        <figure class="gallery-img">
+
+                            <img src="./assets/image/moment5.webp" alt="gallery image" />
+
+                        </figure> <!-- end .cause-img  -->
+
+                    </a> <!-- end .gallery-light-box  -->
+
+                </div><!-- end .col-sm-3  -->
+
+                <div class="col-md-3 col-sm-12 gallery-container">
+
+                    <a class="gallery-light-box"  data-gall="myGallery" href="./assets/image/moment6.webp">
+
+                        <figure class="gallery-img">
+
+                            <img src="./assets/image/moment6.webp" alt="gallery image" />
+
+                        </figure> <!-- end .cause-img  -->
+
+                    </a>
+
+                </div><!-- end .col-sm-3  -->
+
+                <div class="col-md-3 col-sm-12 gallery-container">
+
+                    <a class="gallery-light-box" data-gall="myGallery" href="./assets/image/moment7.webp">
+
+                        <figure class="gallery-img">
+
+                            <img src="./assets/image/moment7.webp" alt="gallery image" />
+
+                        </figure> <!-- end .cause-img  -->
+
+                    </a> <!-- end .gallery-light-box  -->
+
+                </div><!-- end .col-sm-3  -->
+
+                <div class="col-md-3 col-sm-12 gallery-container">
+
+                    <a class="gallery-light-box"  data-gall="myGallery" href="./assets/image/moment8.webp">
+
+                        <figure class="gallery-img">
+
+                            <img src="./assets/image/moment8.webp" alt="gallery image" />
+
+                        </figure> <!-- end .cause-img  -->
+
+                    </a>
+
+                </div><!-- end .col-sm-3  -->
+
+            </div> <!-- end .row  -->
+
+        </div><!-- end .container-fluid  -->
+
+    </section> <!-- end .section-content-block  -->
+
+      <!-- gallery section end -->
+
+
+    <!-- faq section start -->
+    <section id="faq">
+      <div class="container">
+        <div class="row">
+          <h2 class="col-md-12 col-sm-12 text-center">FAQ</h2>
+          <div class="layout">
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>How often can I donate blood? <i class="bi bi-arrow-bar-down"></i></p>
+                </div>
+                <div class="accordion__answer">
+                    <p>Donation frequency depends on factors like local regulations and individual health, typically ranging from every 8 weeks to 3 months.</p>
+                </div>
+            </div>
+     
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Is it safe to donate blood? <i class="bi bi-arrow-bar-down"></i></p>
+                </div>
+     
+                <div class="accordion__answer">
+                    <p>
+                      Yes, donating blood is generally safe for most healthy individuals and is conducted under strict medical supervision to ensure safety.
+                    </p>
+                </div>
+            </div>
+                 
+            <div class="accordion">
+              <div class="accordion__question">
+                  <p>What should I do before donating blood? <i class="bi bi-arrow-bar-down"></i></p>
+              </div>
+   
+              <div class="accordion__answer">
+                  <p>
+                    Before donation, ensure you're well-hydrated, have eaten a nutritious meal, and avoid strenuous activity immediately before or after donating.
+                  </p>
+              </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__question">
+                <p>Are there any side effects of donating blood? <i class="bi bi-arrow-bar-down"></i></p>
+            </div>
+ 
+            <div class="accordion__answer">
+                <p>
+                  Common side effects may include dizziness, fainting, bruising, or discomfort at the donation site, but serious complications are rare.
+                </p>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- faq section end -->
+
+    <!-- Campaign section start -->
+     <section id="drive">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 col-sm-12 text-center">
+                  <h2>Donation Campaigns</h2>
+                  <p>Campaigns to encourage new donors to join and existing to continue to give blood.</p>
+              </div> <!-- end .col-sm-12  -->                       
+          </div> <!-- end .row  -->
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="event-latest">
+                    <div class="row"> 
+                        <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+                            <div class="event-latest-thumbnail">
+                                <a href="#">
+                                    <img src="./assets/image/event_1.webp" alt="">
+                                </a>
+                            </div>
+                        </div> <!--  col-sm-5  -->
+
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="event-details">
+                                <a class="latest-date" href="#">14 June, 2017</a>
+                                <h4 class="event-latest-title">
+                                    <a href="#">World Blood Donors Day</a>
+                                </h4>
+                                <p>Every year, on 14 June, countries around the world celebrate World Blood Donor Day. The event serves to thank voluntary.</p>
+                                <div class="event-latest-details">
+                                    <a class="author" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10.00am - 3.00pm</a>
+                                    <a class="comments" href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> California, USA</a>
+                                </div>
+                            </div>
+                        </div> <!--  col-sm-7  -->
+                    </div>
+                </div>
+            </div> <!--  col-sm-6  -->
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="event-latest ">
+                    <div class="row">
+
+                        <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+                            <div class="event-latest-thumbnail">
+                                <a href="#">
+                                    <img src="./assets/image/event_2.webp" alt="">
+                                </a>
+                            </div>
+                        </div> <!--  col-sm-5  -->
+
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="event-details">
+                                <a class="latest-date" href="#">20 Sep, 2017</a>
+                                <h4 class="event-latest-title">
+                                    <a href="#">O- Blood donors needed</a>
+                                </h4>
+                                <p>O Negative blood cells are called “universal” meaning they can be transfused to almost any patient in need and blood cells are safest.</p>
+                                <div class="event-latest-details">
+                                    <a class="author" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10.00am - 3.00pm</a>
+                                    <a class="comments" href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> California, USA</a>
+                                </div>
+                            </div>
+                        </div> <!--  col-sm-7  -->
+                    </div>
+                </div>
+            </div> <!--  col-sm-6  -->
+        </div> <!--  end .row  -->
+
+        <div class="row margin-bottom-30">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="event-latest">
+                    <div class="row"> 
+                        <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+                            <div class="event-latest-thumbnail">
+                                <a href="#">
+                                    <img src="./assets/image/event_3.webp" alt="">
+                                </a>
+                            </div>
+                        </div> <!--  col-sm-5  -->
+
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="event-details">
+                                <a class="latest-date" href="#">20 Sep, 2017</a>
+                                <h4 class="event-latest-title">
+                                    <a href="#">You are Somebody’s Type</a>
+                                </h4>
+                                <p>Many people has same blood group like you. so donate now and bring smiles in their face and encourage others for donate blood.</p>
+                                <div class="event-latest-details">
+                                    <a class="author" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10.00am - 3.00pm</a>
+                                    <a class="comments" href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> California, USA</a>
+                                </div>
+                            </div>
+                        </div> <!--  col-sm-7  -->
+
+                    </div>
+                </div>
+            </div> <!--  col-sm-6  -->
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="event-latest">
+
+                    <div class="row"> 
+                        <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+                            <div class="event-latest-thumbnail">
+                                <a href="#">
+                                    <img src="./assets/image/event_4.webp" alt="">
+                                </a>
+                            </div>
+                        </div> <!--  col-sm-5  -->
+
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="event-details">
+                                <a class="latest-date" href="#">20 Sep, 2017</a>
+                                <h4 class="event-latest-title">
+                                    <a href="#">Donation - Feel Real Peace</a>
+                                </h4>
+                                <p>You're the real hero because you can gift a new life for patient.So donate your blood and enjoy a precious life. Don't fear, it's really easy.</p>
+                                <div class="event-latest-details">
+                                    <a class="author" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10.00am - 3.00pm</a>
+                                    <a class="comments" href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> California, USA</a>
+                                </div>
+                            </div>
+                        </div> <!--  col-sm-7  -->
+
+                    </div>
+                </div>
+            </div> <!--  col-sm-6  -->
+
+            <!-- hidden campaigns -->
+            <div class="hidden-campaigns">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="event-latest">
+                    <div class="row"> 
+                        <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+                            <div class="event-latest-thumbnail">
+                                <a href="#">
+                                    <img src="./assets/image/event_4.webp" alt="">
+                                </a>
+                            </div>
+                        </div> <!--  col-sm-5  -->
+
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="event-details">
+                                <a class="latest-date" href="#">20 Sep, 2017</a>
+                                <h4 class="event-latest-title">
+                                    <a href="#">Donation - Feel Real Peace</a>
+                                </h4>
+                                <p>You're the real hero because you can gift a new life for patient.So donate your blood and enjoy a precious life. Don't fear, it's really easy.</p>
+                                <div class="event-latest-details">
+                                    <a class="author" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10.00am - 3.00pm</a>
+                                    <a class="comments" href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> California, USA</a>
+                                </div>
+                            </div>
+                        </div> <!--  col-sm-7  -->
+                    </div>
+                </div>
+            </div> <!--  col-sm-6  -->
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="event-latest">
+
+                  <div class="row"> 
+                      <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+                          <div class="event-latest-thumbnail">
+                              <a href="#">
+                                  <img src="./assets/image/event_4.webp" alt="">
+                              </a>
+                          </div>
+                      </div> <!--  col-sm-5  -->
+
+                      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                          <div class="event-details">
+                              <a class="latest-date" href="#">20 Sep, 2017</a>
+                              <h4 class="event-latest-title">
+                                  <a href="#">Donation - Feel Real Peace</a>
+                              </h4>
+                              <p>You're the real hero because you can gift a new life for patient.So donate your blood and enjoy a precious life. Don't fear, it's really easy.</p>
+                              <div class="event-latest-details">
+                                  <a class="author" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10.00am - 3.00pm</a>
+                                  <a class="comments" href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> California, USA</a>
+                              </div>
+                          </div>
+                      </div> <!--  col-sm-7  -->
+                  </div>
+              </div>
+          </div> <!--  col-sm-6  -->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="event-latest">
+
+                <div class="row"> 
+                    <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+                        <div class="event-latest-thumbnail">
+                            <a href="#">
+                                <img src="./assets/image/event_4.webp" alt="">
+                            </a>
+                        </div>
+                    </div> <!--  col-sm-5  -->
+
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <div class="event-details">
+                            <a class="latest-date" href="#">20 Sep, 2017</a>
+                            <h4 class="event-latest-title">
+                                <a href="#">Donation - Feel Real Peace</a>
+                            </h4>
+                            <p>You're the real hero because you can gift a new life for patient.So donate your blood and enjoy a precious life. Don't fear, it's really easy.</p>
+                            <div class="event-latest-details">
+                                <a class="author" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10.00am - 3.00pm</a>
+                                <a class="comments" href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> California, USA</a>
+                            </div>
+                        </div>
+                    </div> <!--  col-sm-7  -->
+                </div>
+            </div>
+        </div> <!--  col-sm-6  -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="event-latest">
+
+              <div class="row"> 
+                  <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+                      <div class="event-latest-thumbnail">
+                          <a href="#">
+                              <img src="./assets/image/event_4.webp" alt="">
+                          </a>
+                      </div>
+                  </div> <!--  col-sm-5  -->
+
+                  <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                      <div class="event-details">
+                          <a class="latest-date" href="#">20 Sep, 2017</a>
+                          <h4 class="event-latest-title">
+                              <a href="#">Donation - Feel Real Peace</a>
+                          </h4>
+                          <p>You're the real hero because you can gift a new life for patient.So donate your blood and enjoy a precious life. Don't fear, it's really easy.</p>
+                          <div class="event-latest-details">
+                              <a class="author" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10.00am - 3.00pm</a>
+                              <a class="comments" href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i> California, USA</a>
+                          </div>
+                      </div>
+                  </div> <!--  col-sm-7  -->
+              </div>
+          </div>
+            </div> <!--  col-sm-6  -->
+            </div>  <!--hidden campaign end-->
+          </div> <!--  end .row  -->                
+          <div class="row">
+              <div class="col-sm-12 col-md-4 col-md-offset-4 text-center">
+                  <a id="loadMoreBtn" class="btn btn-load-more" href="#">Load All Campaigns</a>
+              </div>
+          </div>
+      </div> <!--  end .container  --> 
+  </section>
+    <!-- campaign section end -->
+
+
+    <!-- healthy section start -->
+    <section id="healthy-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Stay Healthy, Save Lives</h2>
+            <p>Explore our latest health tips and advice to maintain your well-being.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="featured-article">
+              <img src="./assets/image/immunity.jfif" alt="Featured Article Image">
+              <h3>Boost Your Immune System Naturally</h3>
+              <p>A healthy lifestyle offers many benefits, including helping to prevent heart disease, type 2 diabetes, obesity, and other chronic diseases. Another important benefit is that healthy routines enhance your immunity.</p>
+              <a href="#" class="read-more-btn btn btn-primary">Read More</a>
+              <div class="hidden-content">
+                <p>The immune system is the body’s way of protecting itself from infection and disease; it fights everything from cold and flu viruses to serious conditions such as cancer.
+                Our immune systems are complex and influenced by many factors. Vaccines, such as the flu vaccine, build immunity against specific diseases. Some additional ways you can strengthen your immune system are eating well, being physically active, maintaining a healthy weight, getting enough sleep, not smoking, and avoiding excessive alcohol use.Starchy carbohydrates should make up just over a third of the food you eat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article-card">
+              <img src="./assets/image/eating.webp" alt="Article Image">
+              <h4>Healthy Eating Habits</h4>
+              <p>The key to a healthy diet is to eat the right amount of calories for how active you are so you balance the energy you consume with the energy you use.</p>
+              <a href="#" class="read-more-btn btn btn-primary">Read More</a>
+              <div class="hidden-content">
+                <p>The immune system is the body’s way of protecting itself from infection and disease; it fights everything from cold and flu viruses to serious conditions such as cancer.
+                  Our immune systems are complex and influenced by many factors. Vaccines, such as the flu vaccine, build immunity against specific diseases. Some additional ways you can strengthen your immune system are eating well, being physically active, maintaining a healthy weight, getting enough sleep, not smoking, and avoiding excessive alcohol use.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="article-card">
+              <img src="./assets/image/stress.jfif" alt="Article Image">
+              <h4>Stress Management Techniques</h4>
+              <p>Many of us are facing challenges that can be stressful, overwhelming, and cause strong emotions in adults and children. Public health actions, such as physical distancing, can make us feel isolated and lonely and can increase stress and anxiety.</p>
+              <a href="#" class="read-more-btn btn btn-primary">Read More</a>
+              <div class="hidden-content">
+                <p>Base your meals on higher fibre starchy carbohydrates
+                  Starchy carbohydrates should make up just over a third of the food you eat. They include potatoes, bread, rice, pasta and cereals.                  
+                  Choose higher fibre or wholegrain varieties, such as wholewheat pasta, brown rice or potatoes with their skins on.
+                  They contain more fibre than white or refined starchy carbohydrates and can help you feel full for longer.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- healthy section end -->
+    </main>
+
+
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container-fluid">
+          <!-- Footer -->
+          <footer
+                  class="text-center text-lg-start text-dark"
+                  style="background-color: #ECEFF1"
+                  >
+            <!-- Section: Social media -->
+            <section
+                     class="d-flex justify-content-between p-4 text-white"
+                     style="background-color: #21D192"
+                     >
+              <!-- Left -->
+              <div class="me-5">
+                <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Left -->
+        
+              <!-- Right -->
+              <div>
+                <a href="https://www.facebook.com/" target="_blank" class="text-white me-4">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" class="text-white me-4">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.google.com/" target="_blank"  class="text-white me-4">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank"  class="text-white me-4">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://bd.linkedin.com/" target="_blank"  class="text-white me-4">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+              <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold">GiveBlood</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p>
+                      Blood donation is essential for saving lives. It provides a critical lifeline for individuals undergoing surgeries, trauma victims, cancer patients, and those with chronic illnesses. Join us in the fight against blood shortage. Your donation can make a difference.
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Useful links</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p>
+                      <a href="index.html" class="text-dark">Home</a>
+                    </p>
+                    <p>
+                      <a href="about.html" class="text-dark">About Us</a>
+                    </p>
+                    <p>
+                      <a href="donate_blood.html" class="text-dark">Donate Blood</a>
+                    </p>
+                    <p>
+                      <a href="blog.html" class="text-dark">Blog</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contact</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p><i class="fas fa-home mr-3"></i> Chattogram, Bangladesh</p>
+                    <p><i class="fas fa-envelope mr-3"></i> giveblood@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> + 8801833368472</p>
+                    <p><i class="fas fa-print mr-3"></i> + 8801567985643</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div
+                 class="text-center p-3"
+                 style="background-color: rgba(0, 0, 0, 0.2)"
+                 >
+              © 2024 Copyright:
+              <a class="text-dark" href="https://giveblood.com/"
+                 >GiveBlood.com</a
+                >
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+        </div>
+        <!-- End of .container -->
+      </footer>
+      <!-- Footer End -->
+  
+  
+  
+  
+  
+  
+  
+  
+      <!-- jquery JS src -->
+      <script src="./assets/vendors/js/jquery-3.7.1.min.js"></script>
+      <!-- bootstrap JS src -->
+      <script src="./assets/vendors/js/bootstrap.bundle.min.js"></script>
+      <!-- Main Jquery JS src -->
+      <script src="./assets/js/jquery.js"></script>
+      <!-- main app.js src -->
+      <script src="./assets/js/app.js"></script>
+  </body>
+  </html>

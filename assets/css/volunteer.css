@@ -1,0 +1,186 @@
+/* volunteer.html css start */
+
+#volunteer{
+    background-image: url(../image/volunteer_hero_bg.svg);
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+/*  volunteer opportunities css start */
+#volunteer-opportunities {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.volunteer-roles {
+    margin-bottom: 60px;
+}
+
+.volunteer-roles h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.volunteer-role {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.volunteer-role:hover {
+    transform: translateY(-5px);
+}
+
+.volunteer-role.expanded {
+    max-height: 500px;
+}
+
+.volunteer-role h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.volunteer-role p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.volunteer-role ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.volunteer-role li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.volunteer-role .btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.volunteer-role .btn:hover {
+    background-color: #e64a2e;
+}
+/* volunteer opportunities css end */
+
+/* how to get involved css start */
+.how-to-get-involved {
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.how-to-get-involved h3 {
+    color: #dc3545; /* Red color for blood */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.how-to-get-involved-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.how-to-get-involved-action {
+    font-size: 16px;
+}
+
+.signup_btn {
+    text-align: center;
+    margin-top: 50px;
+}
+.volunteer_btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.8s; /
+}
+
+.volunteer_btn:hover {
+    background-color: #48080e; 
+}
+/* how to get involved css end */
+
+/* CSS for Volunteer Signup Form */
+
+
+h2 {
+    text-align: center;
+    color: #dc3545; /* Red color for blood */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+input,label{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a slight elevation effect */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #dc3545; /* Red color for blood */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect on background color */
+}
+
+button[type="submit"]:hover {
+    background-color: #c82333; /* Slightly darker red on hover */
+}
+
+/* volunteer.html css end */
